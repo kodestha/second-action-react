@@ -4,5 +4,8 @@ jobs:
   install-node:
     runs-on: ubuntu-latest
     steps:
-      - name: echo simple app
-        run: echo "hello from action"
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: show all the files
+        run: ls -la
