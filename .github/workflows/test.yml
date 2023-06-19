@@ -1,0 +1,8 @@
+name: run all the test cases
+on: [push,workflow_dispatch]
+jobs:
+  install-node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo simple app
+        run: echo "hello from action"
